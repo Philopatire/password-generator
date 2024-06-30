@@ -1,0 +1,208 @@
+/* Start Resets */
+* {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+/* End Resets */
+/* Start Main style */
+body {
+  background-color: #fff;
+  color: #eae9f0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-holder {
+  margin: auto 30px 0;
+  width: 450px;
+  max-width: calc(100% - 60px);
+}
+.content-holder h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #706e78;
+  text-transform: capitalize;
+}
+.content-holder .box {
+  background-color: #24232a;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.content-holder .control-box {
+  border-radius: 0 0 30px 30px;
+  transition: 300ms;
+}
+.content-holder .password-box {
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.content-holder .success-message {
+  position: absolute;
+  top: 100%;
+  background-color: #a5ffaf;
+  color: #706e78;
+  width: 100%;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  transition: 300ms;
+  opacity: 0;
+}
+.content-holder .success-message.active {
+  opacity: 1;
+}
+.content-holder .password-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 575px) {
+  .content-holder .password-field {
+    flex-direction: column;
+  }
+}
+.content-holder .password-field #password_field {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #eae9f0;
+  flex-grow: 1;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: break-spaces;
+}
+@media (max-width: 575px) {
+  .content-holder .password-field #password_field {
+    text-align: center;
+  }
+}
+.content-holder .password-field button#copy_pass {
+  background-color: transparent;
+  color: #a5ffaf;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.content-holder .character-control {
+  margin-bottom: 20px;
+}
+.content-holder .character-control .control-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content-holder .character-control .control-title h2 {
+  font-size: 15px;
+}
+.content-holder .character-control .control-title #character_num_display {
+  color: #a5ffaf;
+  font-size: 25px;
+}
+.content-holder .character-control input#character_num {
+  width: 100%;
+  accent-color: #a5ffaf;
+}
+.content-holder .character-control input#character_num::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.content-holder .check-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.content-holder .check-control input[type=checkbox] {
+  accent-color: #a5ffaf;
+  width: 15px;
+  height: 15px;
+}
+.content-holder .check-control .control-title {
+  font-size: 14px;
+  user-select: none;
+}
+.content-holder .strength-field {
+  background-color: #111116;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.content-holder .strength-field .strength-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content-holder .strength-field .strength-display .strength-title {
+  font-size: 14px;
+}
+.content-holder .strength-field .strength-display .strength-points {
+  display: flex;
+  gap: 5px;
+}
+.content-holder .strength-field .strength-display .strength-points .point {
+  height: 20px;
+  width: 8px;
+  background-color: transparent;
+  border: 1px solid #706e78;
+}
+.content-holder .strength-field .strength-display .strength-points .point.active {
+  border-color: #f9d178;
+  background-color: #f9d178;
+}
+.content-holder button#generate_pass {
+  border: none;
+  width: 100%;
+  color: #24232a;
+  background-color: #a5ffaf;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 50px;
+}
+.content-holder button#generate_pass:hover {
+  opacity: 0.8;
+}
+
+.footer-copyright {
+  margin-top: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: #24232a;
+  text-align: center;
+}
+
+/* End Main style */
+
+/*# sourceMappingURL=style.css.map */

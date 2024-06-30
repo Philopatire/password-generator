@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filo Essam | Password Generator</title>
+
+  <!-- Source code pro Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content-holder">
+      <h1>Password Generator</h1>
+      <div class="box password-box">
+        <div class="password-field">
+          <span id="password_field">Test Pass</span>
+          <button id="copy_pass"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <p class="success-message">Copied Successfully</p>
+      </div>
+      <div class="box control-box">
+        <div class="character-control">
+          <div class="control-title">
+            <h2>Character Length</h2>
+            <span id="character_num_display">10</span>
+          </div>
+          <input type="range" id="character_num" min="3" max="20" value="10">
+        </div>
+        <div class="checkboxs-controls">
+          <div class="upper-control check-control">
+            <input type="checkbox" id="upper_check" checked>
+            <label for="upper_check" class="control-title">Include Uppercase Letters</label>
+          </div>
+          <div class="lower-control check-control">
+            <input type="checkbox" id="lower_check">
+            <label for="lower_check" class="control-title">Include Lowercase Letters</label>
+          </div>
+          <div class="nums-control check-control">
+            <input type="checkbox" id="nums_check">
+            <label for="nums_check" class="control-title">Include Numbers</label>
+          </div>
+          <div class="syms-control check-control">
+            <input type="checkbox" id="syms_check">
+            <label for="syms_check" class="control-title">Include Symbols</label>
+          </div>
+        </div>
+        <div class="strength-field">
+          <span class="strength-title">Strength</span>
+          <div class="strength-display">
+            <span class="strength-text">Medium</span>
+            <div class="strength-points">
+              <div class="point active"></div>
+              <div class="point active"></div>
+              <div class="point active"></div>
+              <div class="point"></div>
+              <div class="point"></div>
+            </div>
+          </div>
+        </div>
+        <button id="generate_pass">Generate <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      Made With ❤️ by <a href="https://filoessam.rf.gd">Filo Essam</a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>  
+</body>
+</html>
